@@ -1,29 +1,27 @@
+html, body {
+  height: 100%;
+}
+
 body {
-	margin: 0;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: Arial, sans-serif;
-	background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
 }
 
-.center-content {
-	text-align: center;
+main {
+  flex: 1; /* pushes footer down */
 }
 
-.linkedin-button {
-	display: inline-block;
-	margin-top: 20px;
-	padding: 10px 20px;
-	background-color: #0077b5;
-	color: white;
-	text-decoration: none;
-	border-radius: 5px;
-	font-weight: bold;
-	transition: background-color 0.3s;
+/* https://images.unsplash.com/photo-1518779578993-ec3579fee39f */
+header {
+  background: url('../images/bg.jpg?w=1200&auto=format') center/cover no-repeat;
 }
 
-.linkedin-button:hover {
-	background-color: #005582;
+header .container {
+  background: rgba(0,0,0,0.7);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.timeline li {
+  margin-bottom: 1rem;
 }
