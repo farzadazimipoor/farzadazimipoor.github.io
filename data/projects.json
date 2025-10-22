@@ -1,14 +1,22 @@
 [
   {
-    "title": "HabitFlow",
-    "description": "Habit tracker built with Jetpack Compose and Room. Offline-first with sync.",
-    "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format",
-    "github": "https://github.com/farzadazimipoor/habitflow"
+    "title": "TaskMaster Pro",
+    "description": "A modern task management app built with Jetpack Compose, featuring offline sync, dark mode, and Material You design.",
+    "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&auto=format",
+    "github": "https://github.com/farzadazimipoor/taskmaster-pro",
+    "link": "https://play.google.com/store/apps/details?id=com.farzad.taskmaster"
   },
   {
-    "title": "Weatherly",
-    "description": "Weather app using Retrofit + Coroutines. MVVM with caching and theming.",
-    "image": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&auto=format",
-    "github": "https://github.com/farzadazimipoor/weatherly"
+    "title": "WeatherWise",
+    "description": "Clean architecture weather app with MVVM pattern, Room database, and beautiful animations using Lottie.",
+    "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&auto=format",
+    "github": "https://github.com/farzadazimipoor/weatherwise",
+    "link": "https://play.google.com/store/apps/details?id=com.farzad.weather"
+  },
+  {
+    "title": "FitTracker",
+    "description": "Fitness tracking app with Kotlin Coroutines, Firebase integration, and real-time workout monitoring.",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&auto=format",
+    "github": "https://github.com/farzadazimipoor/fittracker"
   }
 ]

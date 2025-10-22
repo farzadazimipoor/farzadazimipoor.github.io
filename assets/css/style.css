@@ -190,25 +190,26 @@ section h2.text-center::after {
   margin-bottom: 16px;
 }
 
-.skill-list {
+.skill-badges {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 8px;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-.skill-item {
+.skill-badge {
   background: #f8f9fa;
   color: #495057;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 12px;
   font-weight: 500;
   border: 1px solid #e9ecef;
-  text-align: center;
   transition: all 0.3s ease;
 }
 
-.skill-item:hover {
+.skill-badge:hover {
   background: #28a745;
   color: white;
   border-color: #28a745;
@@ -216,6 +217,14 @@ section h2.text-center::after {
 }
 
 /* Contact Form Polish */
+.contact-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+}
+
 #contactForm .form-control {
   border-radius: 8px;
   border: 2px solid #e9ecef;
@@ -279,6 +288,62 @@ section h2.text-center::after {
 
 .bg-wave h2 {
   color: white;
+}
+
+/* Hero Animations */
+.hero-subtitle {
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.hero-title {
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-description {
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.hero-buttons {
+  animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Testimonials */
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-content {
+  margin-bottom: 16px;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: #495057;
+  margin: 0;
+}
+
+.testimonial-author strong {
+  color: #2c3e50;
 }
 
 /* Scroll Animations */
