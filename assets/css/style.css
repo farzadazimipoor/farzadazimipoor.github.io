@@ -190,6 +190,31 @@ section h2.text-center::after {
   margin-bottom: 16px;
 }
 
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-item {
+  background: #f8f9fa;
+  color: #495057;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #e9ecef;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background: #28a745;
+  color: white;
+  border-color: #28a745;
+  transform: translateY(-2px);
+}
+
 /* Contact Form Polish */
 #contactForm .form-control {
   border-radius: 8px;
