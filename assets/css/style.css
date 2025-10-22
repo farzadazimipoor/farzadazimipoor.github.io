@@ -433,4 +433,259 @@ header .container {
   border-radius: 10px;
 }
 
+/* Dark Mode Styles */
+[data-theme="dark"] {
+  background-color: #1a1a1a !important;
+  color: #e9ecef !important;
+}
+
+[data-theme="dark"] body {
+  background-color: #1a1a1a !important;
+  color: #e9ecef !important;
+}
+
+[data-theme="dark"] .bg-gradient-light {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%) !important;
+  color: white;
+}
+
+[data-theme="dark"] .bg-pattern {
+  background-color: #2c3e50 !important;
+}
+
+[data-theme="dark"] .bg-dots {
+  background-color: #34495e !important;
+}
+
+[data-theme="dark"] .card {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .testimonial-card {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .timeline-content {
+  background-color: #343a40 !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .skill-badge {
+  background-color: #495057 !important;
+  color: white !important;
+  border-color: #6c757d !important;
+}
+
+[data-theme="dark"] .skill-tag {
+  background-color: #495057 !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .form-control {
+  background-color: #495057 !important;
+  color: white !important;
+  border-color: #6c757d !important;
+}
+
+[data-theme="dark"] .form-control:focus {
+  background-color: #495057 !important;
+  color: white !important;
+}
+
+[data-theme="dark"] .form-control::placeholder {
+  color: #adb5bd !important;
+}
+
+/* Animated Theme Switch */
+.theme-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.theme-switch-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-switch-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #495057;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+  border: 2px solid #6c757d;
+}
+
+.theme-switch-label:hover {
+  background: #6c757d;
+}
+
+.theme-switch-switch {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.theme-switch-checkbox:checked + .theme-switch-label {
+  background: #28a745;
+  border-color: #20c997;
+}
+
+.theme-switch-checkbox:checked + .theme-switch-label .theme-switch-switch {
+  transform: translateX(26px);
+}
+
+.theme-switch-inner:before,
+.theme-switch-inner:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.theme-switch-inner:before {
+  content: "\f186";
+  left: 6px;
+  color: #ffc107;
+  opacity: 0;
+}
+
+.theme-switch-inner:after {
+  content: "\f185";
+  right: 6px;
+  color: #6c757d;
+  opacity: 1;
+}
+
+.theme-switch-checkbox:checked + .theme-switch-label .theme-switch-inner:before {
+  opacity: 1;
+}
+
+.theme-switch-checkbox:checked + .theme-switch-label .theme-switch-inner:after {
+  opacity: 0;
+}
+
+/* Enhanced Contact Form Button */
+#contactForm .btn {
+  background: linear-gradient(45deg, #28a745, #20c997);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+  transition: all 0.3s ease;
+}
+
+#contactForm .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+  background: linear-gradient(45deg, #20c997, #28a745);
+}
+
+/* Enhanced Social Media Buttons */
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.social-links .email {
+  background: linear-gradient(45deg, #dc3545, #fd7e14);
+  color: white;
+}
+
+.social-links .github {
+  background: linear-gradient(45deg, #333, #666);
+  color: white;
+}
+
+.social-links .linkedin {
+  background: linear-gradient(45deg, #0077b5, #00a0dc);
+  color: white;
+}
+
+[data-theme="dark"] .social-links a {
+  box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .social-links a:hover {
+  box-shadow: 0 8px 25px rgba(255,255,255,0.2);
+}
+
+/* Dark mode text fixes */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6,
+[data-theme="dark"] p,
+[data-theme="dark"] .lead,
+[data-theme="dark"] .card-title,
+[data-theme="dark"] .timeline-header h5,
+[data-theme="dark"] .company,
+[data-theme="dark"] .achievements li,
+[data-theme="dark"] .testimonial-author strong {
+  color: #e9ecef !important;
+}
+
+[data-theme="dark"] .text-dark {
+  color: #e9ecef !important;
+}
+
+[data-theme="dark"] .text-muted {
+  color: #adb5bd !important;
+}
+
+/* Light mode navbar */
+[data-theme="light"] .navbar {
+  background-color: #f8f9fa !important;
+}
+
+[data-theme="light"] .navbar-brand,
+[data-theme="light"] .nav-link {
+  color: #212529 !important;
+}
+
+[data-theme="light"] .navbar-toggler {
+  border-color: #212529;
+}
+
+[data-theme="light"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 

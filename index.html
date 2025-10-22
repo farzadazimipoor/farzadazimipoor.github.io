@@ -43,6 +43,15 @@
                 <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                 <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item d-flex align-items-center">
+                    <div class="theme-switch ms-3">
+                        <input type="checkbox" id="themeToggle" class="theme-switch-checkbox">
+                        <label for="themeToggle" class="theme-switch-label">
+                            <span class="theme-switch-inner"></span>
+                            <span class="theme-switch-switch"></span>
+                        </label>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -54,7 +63,7 @@
     <!-- Hero -->
     <header class="bg-dark text-white text-center vh-100 d-flex flex-column justify-content-center">
         <div class="container">
-            <p class="lead text-muted">Android • Kotlin • Jetpack Compose</p>
+
             <h1 class="display-4 fw-bold">Hi, I’m <span class="text-success">Farzad</span></h1>
             <p class="lead">I build fast, scalable Android apps with clean architecture and delightful UX.</p>
             <div class="mt-4">
@@ -334,16 +343,25 @@
                 </div>
             </form>
             <div id="formMessage" class="mt-3" style="display: none;"></div>
-            <div class="mt-4">
-                <a href="mailto:farzad.azimipoor@gmail.com" class="me-3 text-dark"><i class="fa-regular fa-envelope fa-2x"></i></a>
-                <a href="https://github.com/farzadazimipoor" target="_blank" rel="noopener noreferrer" class="me-3 text-dark"><i
-                        class="fa-brands fa-github fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/farzadazimipoor" target="_blank" rel="noopener noreferrer" class="text-dark"><i
-                        class="fa-brands fa-linkedin fa-2x"></i></a>
+            <div class="mt-4 social-links">
+                <a href="mailto:farzad.azimipoor@gmail.com" class="email" title="Email">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://github.com/farzadazimipoor" target="_blank" rel="noopener noreferrer" class="github" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/farzadazimipoor" target="_blank" rel="noopener noreferrer" class="linkedin" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
         </div>
     </section>
 </main>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="btn btn-success position-fixed" style="bottom: 20px; right: 20px; z-index: 1000; display: none; border-radius: 50%; width: 50px; height: 50px;">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3 mt-auto">
